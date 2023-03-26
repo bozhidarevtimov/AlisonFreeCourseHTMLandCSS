@@ -1,0 +1,65 @@
+
+/*Box sizing and * to reference all alements in a page*/
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 800px;
+	  background-image: url(https://t3.ftcdn.net/jpg/03/44/67/38/240_F_344673825_6fU6IORyipkYpfU1mg2vmxtHxDToUO6Q.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /*This property is seting the backround to fixed position so when you scroling onlythe content move*/
+  background-attachment: fixed;
+}
+
+h1,h2,h3
+{
+	color: #F28F0C;
+	fontsize: 40px;
+}
+h1
+{
+		border-color: red;
+	border-style: solid;
+	border-width: 3px;
+	fontsize: 40px;
+}
+
+h2
+{
+	fontsize: 30px;
+}
+img
+{
+	height: 100%;
+	width: 100%;
+	border-color: red;
+	border-style: solid;
+	border-width: 3px;
+}
+
+/*Class selectors are referensed with .(className)*/
+.paragrafClassSelector
+{
+	color: green;
+	font-size: 15px;
+}
+/*Id selectors are referensed with #(Id)*/
+#imageIdSelector
+{
+		height: auto;
+	width: 100%;
+	border-color: green;
+	border-style: solid;
+	border-width: 3px;
+}
+
+/*Displays the divs next to each other*//*.topics
+{
+	display: inline-block;
+}
+*/
+

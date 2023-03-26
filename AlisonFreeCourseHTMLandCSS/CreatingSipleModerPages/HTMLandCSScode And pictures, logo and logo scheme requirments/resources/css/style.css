@@ -1,0 +1,212 @@
+/*At the beginign of each css file for a website to control the marging, pading and box size.*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*General properties for html files*/
+html, body
+{
+	font-size: 16px;
+	font-family: 'Work Sans', 'Areal', sans-serif;
+	font-weight: 300;
+	background-color: white;
+	color: black;
+	/*text render: optimizeLegibility makes sure the font get render(perform) proerly*/
+	text-rendering: optimizeLegibility;
+}
+.row
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
+/*Header start*/
+header
+{
+	/*linear-gradient is used to overlay the backround, so the text can be more visible. 
+		Two or more colors are used as a parameters
+	he rgba color scheem provides a parameter after the rgba code for the color wich parameter sest transperancy*/
+	background-image: linear-gradient(rgba(202,23,23,.5),rgba(202,23,23,.7)), url(img/backround.jpg);
+	height: 100vh;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  position: relative;
+
+
+}
+
+.header-box
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+
+h1
+{
+	font-size: 500%;
+	color: white;
+	font-weight: 350;
+	margin-bottom: 30px;
+
+}
+h2
+{
+font-size: 200%;
+color: white;
+font-weight: 350;
+	margin-bottom: 30px;
+}
+
+.header-box-text
+{
+	margin-bottom: 70px;
+}
+/*Header ends*/
+
+
+/*Buttons Start*/
+
+/*Psudo clases link,visited,hover,active  they are expresed with :thePsudoClass and are states of the button
+So depending on what state we put we can write the css code for that state
+here we describe how the buttons will apeare at link(normal) and visited(when is already clicked ones) states*/
+.btn:link,
+.btn:visited,
+{
+		font-size: 20px;
+	text-decoration: none;
+	border-radius: 200px;
+			color: white;
+	padding: 10px 30px;
+}
+.btn-full:link,
+.btn-full:visited
+{
+		text-decoration: none;
+			border-radius: 200px;
+		color: white;
+		font-size: 20px;
+			padding: 10px 30px;
+				background-color:rgba(17, 200, 0, 1.0);
+
+}
+/*here we set what will going to happend when the full button is in hover state*/
+.btn-full:hover
+{
+		background-color:rgba(0, 150, 0, 0.8);
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+	text-decoration: none;
+			border-radius: 200px;
+		color: black;
+		font-size: 20px;
+			padding: 10px 30px;
+	border: 2px solid rgba(17, 200, 0, 1.0);
+}
+.btn-ghost:hover,
+.btn-ghost:active
+{
+			color: white;
+background-color:rgba(0, 150, 0, 0.8);
+}
+/*Buttons Ends*/
+
+
+
+
+/*Nav Start*/
+
+.main-nav
+{
+	list-style: none;
+	float:right;
+	margin-top: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	margin-right: 40px;
+	text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+text-decoration: none;
+	color: white;
+transition:border-botom 0.5s;
+
+}
+.main-nav li a:hover,
+.main-nav li a:hover
+{
+border-bottom: 2px solid rgba(17, 200, 0, 1.0);
+}
+/*image in Nav*/
+.logo
+{
+	height: 70px;
+	width: auto;
+	border-radius: 50%;
+	float: left;
+		margin-top: 10px;
+}
+
+/*Nav end*/
+
+
+
+
+
+/*About Section Start*/
+.aboutimg
+{
+	width: 100%;
+		border-radius: 10%;
+}
+.about-heading
+{
+
+	color: black;
+	font-size: 350%;
+}
+.about-para
+{
+		color: black;
+	font-size: 150%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.about-box
+{
+	margin-top: 150px;
+}
+/*Psudo clases first,second... child  they are expresed with :thePsudoClass 
+and states wich child o manimulate. In this case the first child of the about-box class*/
+.about-box:first-child
+{
+text-align: left;
+}
+.about-box:last-child
+{
+text-align: right;
+}
+
+.about-section
+{
+	padding-bottom: 15px;
+}
+
+/*About Section end*/
